@@ -1,0 +1,15 @@
+Apache HTTP Server
+The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. 
+Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
+
+Default configuration file
+Redhat-conf/httpd.conf
+Debian-apache2.conf
+
+Default home directory
+ /var/www/html
+
+Why apache server
+Apache is open-source software, which means that the source code can be viewed and collaborated for free. 
+The basic job of all web servers is to accept requests from clients (e.g. a visitor’s web browser) and then send the response to that request (e.g. the components of the page that a visitor wants to see).
+

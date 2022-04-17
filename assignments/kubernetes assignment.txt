@@ -1,0 +1,20 @@
+Pod
+A Pod is a group of one or more application containers (such as Docker ) and includes shared storage (volumes), IP address and information about how to run them.
+Containers within a Pod share an IP Address and port space. Containers of the same Pod are always co-located and co-scheduled, and run in a shared context on the same node. A Pod models an application-specific “logical host” and contains one or more application containers which are relatively tightly coupled. An example of container that would fit on the same Pod with our the NodeJS app, would be a side container that feeds the data published by the webserver. In a pre-container world, they would have run on the same physical or virtual machine.
+
+Nodes
+Pods always run on Nodes. A Node is a worker machine in Kubernetes and may be a VM or a physical machine, depending on the cluster. Each Node runs Pods and is managed by the Master. On a Node you can have multiple pods. The scheduling of Pods is performed automatically by the Master and this takes into account the available resources on the Nodes.
+
+Every Kubernetes Node runs at least:
+
+A container runtime (like Docker, rkt) that will take care of pulling all your containers from a registry.
+Kubelet, that acts as a bridge between the Kubernetes Master and the Nodes; it manages the Pods and the containers running on a machine.
+
+
+ReplicaSets
+A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often used to guarantee the availability of a specified number of identical Pods.
+A ReplicaSet is defined with fields, including a selector that specifies how to identify Pods it can acquire, a number of replicas indicating how many Pods it should be maintaining, and a pod template specifying the data of new Pods it should create to meet the number of replicas criteria. A ReplicaSet then fulfills its purpose by creating and deleting Pods as needed to reach the desired number. When a ReplicaSet needs to create new Pods, it uses its Pod template.
+
+
+Deployment
+A Kubernetes Deployment is used to tell Kubernetes how to create or modify instances of the pods that hold a containerized application. Deployments can scale the number of replica pods, enable rollout of updated code in a controlled manner, or roll back to an earlier deployment version if necessary. 

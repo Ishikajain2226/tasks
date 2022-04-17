@@ -1,0 +1,13 @@
+Monolithic Architecture
+1.Completely developed in a single programming language.
+2.It has only a single codebase.
+3.It is very difficult to understand, and it is confusing.
+4.Application scaling is very difficult as the entire application should be scaled.
+5.It has a centralized data model.
+
+Microservice Architecture
+1.Every service can be independently developed using different programming languages.
+2.It has multiple codebases. Every service has a separate codebase for them.
+3.It has high understandability and is very easy to maintain.
+4.Application scaling is very easy as each service can be scaled separately without scaling of the entire application.
+5.It has a federated data model, allowing each service to adopt its own data model.

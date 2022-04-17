@@ -1,0 +1,11 @@
+IaaS(Infrastructure as a service)
+You take infrastructure as a service basically you take operating system as a service like EC2 instance in amazon.
+
+PaaS(Platform as a service)
+WE basically take platform as a service so you can directly take the runtime environment required.It is mostly used by the developers so that they can have runtime environment required like you need python environment to run program you can get it.Eg-Slack
+
+SaaS(Software as a service)
+You can directly take software(application) as a service like netflix,dropbox,google mail.
+
+DbaaS(Database as a service)
+It lets users access and use a cloud database system without purchasing and setting up their own hardware, installing their own database software, or managing the database themselves.
